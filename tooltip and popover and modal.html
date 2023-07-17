@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .img-logo{
+        width: 100px;
+        height: 75px;
+      }
+      .img-hi{
+        width: 200px;
+        height: 225px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="container mt-5">
+        <p>We are Year 9 Purple Marigold students attending at <a href="#" data-bs-toggle="tooltip" data-bs-title="Education Students Network" data-bs-placement="bottom">EDUSN</a></p>
+        <p>You can register in here.
+            <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" data-bs-title="Register to EDUSN" data-bs-placement="right" data-bs-custom-class="custom-tooltip">Register</button>
+        </p>
+    </div>
+
+    <div class="container">
+        <h2>Footer</h2>
+        <div class="row">
+            <div class="col-lg-3">
+              <div class="col">
+                <a href="#" class="fa fa-facebook"
+                 data-bs-toggle="popover" 
+                 data-bs-html="true"
+                 data-bs-custom-class="custom-popover"
+                 data-bs-title="popover title"
+                 data-bs-trigger="focus"
+                 data-bs-content="popover contents with  <b><i>html tag</i></b> <br> <li>list item 1</li> <li>list item 2</li> <li>list item 3</li> <p>This is popover paragraph.</p> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique voluptatem delectus, corrupti optio aliquid ratione, commodi nihil numquam sit blanditiis tempore esse, magni distinctio quasi ex dolorum aspernatur laboriosam expedita.</span> <img class="navbar-brand" src="brand_logo.jpg" alt="brand">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3">Link group</div>
+            <div class="col-lg-3">Social Media tooltips
+              <div class="row">
+                <div class="col"><a href="#" class="fa fa-facebook" data-bs-toggle="tooltip" data-bs-title="Facebook" data-bs-custom-class="custom-facebook"></a></div>
+                <div class="col"><a href="#" class="fa fa-twitter" data-bs-toggle="tooltip" data-bs-title="Twitter" data-bs-custom-class="custom-twitter"></a></div>
+                <div class="col"><a href="#" class="fa fa-pinterest" data-bs-toggle="tooltip" data-bs-title="Pinterest" data-bs-custom-class="custom-pinterest"></a></div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              Modal Testing <br>
+              <button type="button" class="btn btn-primary" 
+              data-bs-toggle="modal" data-bs-target="#simple-modal">Simple Modal</button>
+
+              <div class="modal" id="simple-modal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">This is modal header.</div>
+                    <div class="modal-body">This is modal body.</div>
+                    <div class="modal-footer">
+                      This is modal footer.
+                      <button type="button" class="btn btn-secondary">Close</button>
+                      <button type="button" class="btn btn-primary">Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div> <!--end of first modal-->
+    <!--start of second modal-->
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-4"></div>
+
+        <div class="col-4">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignInModal">Sign up to continue</button>
+          <!--Start of modal-->
+          <div class="modal" id="SignInModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header bg-head">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="row">
+                        <img src="brand_logo.jpg" alt="logo" class="img-logo"> 
+                        
+                      <h3 class="pt-4"><b>Discover the <br> World's <br> top Designer & <br> Creative</b></h3>
+                      <br> 
+                      <p class="pt-4"><small>art by Purple Marigold</small></p>
+                      </div>
+                    </div>
+                    <div class="col-6"> <img src="Signinimg.png" alt="img" class="img-hi"></div>
+                  </div>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-10 d-grid">
+                      <button type="button" class="btn btn-primary">Sign up with Google</button>
+                    </div>
+                    <div class="col-2">
+                      <a href="#" class="fa fa-twitter" data-bs-toggle="tooltip" data-bs-title="Twitter" data-bs-custom-class="custom-twitter"></a>
+                    </div>
+                    <p class="d-flex justify-content-center pt-4">or Sign up with email</p>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <p>Always a member?</p> 
+                  <a href="#" data-bs-toggle="tooltip" data-bs-title="Sign in with gmail">Sign in</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-4"></div>
+       
+      </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        const tooltips=document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        tooltips.forEach(t =>{ new bootstrap.Tooltip(t)})
+
+        const popovers=document.querySelectorAll('[data-bs-toggle="popover"]')
+        popovers.forEach(pp=>{new bootstrap.Popover(pp)})
+    </script>
+
+  </body>
+</html>

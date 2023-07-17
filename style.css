@@ -1,0 +1,117 @@
+/* main Page*/
+.background_color{
+    background-color: darkgrey;
+}
+.jum-text1{
+    background-color: peru;
+    border-radius: 5px;
+    padding: 0.2cm;
+    
+}
+.bg-hero1{
+    background-image: url(bg-jum1.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+/* jumbotron of gift card */
+.bg-hero-gc{
+    background-color: blue;
+    color: aliceblue;
+}
+.img-wrappper{
+    width: 100%;
+    height: 120px;
+}
+@media(min-width:576px){
+    .img-wrappper{
+        clip-path: polygon(25% 0%, 100% 0%, 100% 99%, 0% 100%);
+    }
+}
+/* Carousel 1*/
+.cr-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.9;
+}
+.cr-bg1{
+    background-image: url(carousel.jpg);
+}
+.cr-bg2{
+    background-image: url(carousel2.jpg);
+}
+.cr-bg3{
+    background-image: url(carousel3.jpg);
+}
+.carousel-hero{
+    color: #38060e;
+}
+/*Carousel indicators */
+.carousel .carousel-indicators button{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+.tx{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 100%, 0% 0%);
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 5px;
+}
+.card .ch-pos{
+    position: absolute;
+    top: 20px; right: 20px;
+}
+.ch-pos{
+    position: absolute;
+}
+
+/*Style of tooltip*/
+.custom-facebook{
+    --bs-tooltip-bg: #3B5998;
+}
+.custom-twitter{
+    --bs-tooltip-bg:var(--bs-primary);
+}
+.custom-pinterest{
+    --bs-tooltip-bg: red;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa{
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 25px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+}
+.fa-pinterest{
+    background: #dd4b39;
+    color: white;
+}
+/*Popover custom design*/
+.custom-popover{
+    --bs-popover-max-width: 200px;
+    --bs-popover-border-bg: #3B5998;
+    --bs-popover-header-color:#ffffff;
+    --bs-popover-header-color: #3B5998;
+    --bs-popover-body-color:#3B5998;
+    --bs-popover-bg:var(--bs-warning);
+}
+
+/*Modal Sign in second example*/
+.bg-head{
+    background-color: lightblue;
+}

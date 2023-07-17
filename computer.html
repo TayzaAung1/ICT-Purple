@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .heello{
+        width: 125px;
+        height: 125px;
+      }
+      .navbar-brand{
+            width: 125px; 
+            height: 125px;
+        }
+    </style>
+  </head>
+  <body>
+    <!--Nav Panel-->
+    <header class="text-white">
+      <div class="container">
+          <div class="row">
+              <nav class="navbar navbar-light navbar-expand-lg ">
+                  <a href="index.html">
+                      <img class="navbar-brand" src="brand_logo.jpg" alt="brand">E-World
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="mainMenu">
+                   <ul class="navbar-nav mx-auto nav-underline">
+                      <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Products</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="apple.html" class="dropdown-item">Apple</a></li>
+                        <li><a href="computer.html" class="dropdown-item">Computers</a></li>
+                        <li><a href="#" class="dropdown-item">Laptops</a></li>
+                        <li><a href="page.html" class="dropdown-item">Electronic Devices</a></li>
+                      </ul>
+                      </li>
+
+                      <li class="nav-item"><a class="nav-link" href="gift-card.html">Gift-Cards</a></li>
+                      <li class="nav-item"><a class="nav-link" href="reward.html">Rewards</a></li>
+                      <li class="nav-item"><a class="nav-link" href="log_in.html">Log In</a></li>
+                      <li class="nav-item"><a class="nav-link" href="registration.html">Sign Up</a></li>
+                   </ul>
+                  </div> 
+                  <form action="/" class="d-flex">
+                    <input type="search" class="form-control me-3" placeholder="search">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                  </form>
+              </nav>
+          </div>
+      </div>
+  </header>
+    <!--End of Nav panel-->
+    <!--start of jumbotron called hroes section-->
+    <div class="container-fluid bg-hero-gc">
+        <div class="row">
+            <div class="col-sm-5">
+              <div class="ms-3 my-5">
+                <p><span class="jum-text1 p-1">Best Prices</span></p>
+                <h1>Incredible Prices <br>on All Your <br>Favorite Items</h1>
+                <p>Get More for less on selected brands</p>
+                <button type="button" class="btn btn-secondary">Shop Now</button>
+              </div>
+            </div>
+            <div class="col-sm-7">
+                <img class="img-wrapper" src="bg-jum3.jpg" alt="Jumbotron-2">
+            </div>
+        </div>
+    </div> <!--end of jumbotron-->
+    <!--Start of card design-->
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 shadow">
+          <!--start of card-->
+          <div class="card mt-2 mb-3">
+            <img src="computer images/hp-laptop1.png" alt="laptop" class="card-img-top p-3">
+            <div class="card-body">
+              <h5 class="hp-title">HP laptop</h5>
+              <p class="card-text">Gen Intel Core <br> Prices - $2000</p>
+              <button type="button" class="btn btn-primary">Buy Here</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-3">
+            <img src="computer images/hp-laptop1.png" alt="laptop" class="card-img-top p-3">
+            <div class="card-body">
+              <h5 class="hp-title">HP laptop</h5>
+              <p class="card-text">Gen Intel Core <br> Prices - $2000</p>
+              <button type="button" class="btn btn-primary">Buy Here</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-3">
+            <img src="computer images/hp-laptop1.png" alt="laptop" class="card-img-top p-3">
+            <div class="card-body">
+              <h5 class="hp-title">HP laptop</h5>
+              <p class="card-text">Gen Intel Core <br> Prices - $2000</p>
+              <button type="button" class="btn btn-primary">Buy Here</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-3">
+            <p><span class="bg-danger p-1 ch-pos rounded">New!</span></p>
+            <img src="computer images/hp-laptop2.jpg" alt="laptop" class="card-img-top p-3">
+            <div class="card-body">
+              <p><span class="tx card-text text-white p-1">Offical Stores</span>
+                <br class="card-text">HP Pivillion (Natural Silver)</p>
+              <h5 class="card-title text-warning">Ks - 2,121,000</h5>
+              <p class="card-text"><del>Ks - 2,600,000</del> -19%</p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="card-link">Click Here</a>
+                <p class="card-text"><small>Myanmar (Burma)</small></p>
+              </div>    
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-3">
+            <img src="computer images/download.jpg" alt="butter" class="card-img-top p-3">
+            <p class="ch-pos"><small>@WWF-US/Clay Bolt</small></p>
+            <div class="card-body">
+              <h5 class="card-title">TEACHING TOOLS ABOUT THE MOARCHS</h5>
+              <p class="card-text">Through the activities within the monarch butterfly toolkit...</p>
+              <ul class="list-group">
+                <li class="list-group-item bg-warning">Download Full Monarch Butterfly Toolkit</li>
+                <li class="list-group-item bg-warning">What's the Toolkit</li>
+                <li class="list-group-item bg-warning">View the Spanish Toolkit</li>
+              </ul> 
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card mt-2 mb-3">
+            <img src="computer images/cartoon.JPG" alt="cartoon" class="rounded-circle">
+            <div class="card-body">
+              <h5 class="title center">Cartoon</h5>
+              <br>
+              <br>
+              <div class="d-grid">
+                <button type="button" class="btn btn-primary d-grid">Buy Here</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div><!--End of individual card-->
+    <!--horizontal card-->
+    <div class="container">
+      <div class="row">
+
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="row">
+              <div class="col-7 card-body">
+                <h5 class="card-title text-primary">Make A One-Time Donation</h5>
+                <p class="card-text">Become a member and support World Wildlife Fund's global conservation efforts with a one-time donation</p>
+              </div>
+              <div class="col-5">
+                <img src="images-removebg-preview.png" alt="naruto" class="card-img img-fluid heello">
+              </div>
+            </div>
+          </div>  
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <div class="row">
+              <div class="col-7 card-body">
+                <h5 class="card-title text-primary">ADOPT AN ANIMAL</h5>
+                <p class="card-text">Make a symbolic animal adoption to help save some of the world's most endangered animals from extinction and support WWF's conservation efforts.</p>
+              </div>
+              <div class="col-5">
+                <img src="images-removebg-preview.png" alt="naruto" class="card-img img-fluid heello">
+              </div>
+            </div>
+          </div>
+        </div>    
+        <div class="col-md-6">
+          <div class="card">
+            <div class="row">
+              <div class="col-7 card-body">
+                <h5 class="card-title text-primary">GIVE THROUGH YOUR DONOR ADVISED FUND</h5>
+                <p class="card-text">Learn how you can make a powerful impact on nature and simplify your giving through your Donor Advised Fund.</p>
+              </div>
+              <div class="col-5">
+                <img src="images-removebg-preview.png" alt="naruto" class="card-img img-fluid heello">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="row">
+              <div class="col-7 card-body">
+                <h5 class="card-title text-primary">BECOME A PARTNER IN CONSERVATION</h5>
+                <p class="card-text">Make a special commitment with an annual contribution of $1,000 or more and receive special privileges.</p>
+              </div>
+              <div class="col-5">
+                <img src="images-removebg-preview.png" alt="naruto" class="card-img img-fluid heello">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

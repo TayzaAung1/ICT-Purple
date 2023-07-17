@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Modal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="brand_logo.jpg" type="image/x-icon">
+    <style>
+      .navbar-brand{
+        width: 80px;
+        height: 80px;
+      }
+      .attribute1{
+        text-decoration: none;
+        color: aliceblue;
+      }
+      .hii{
+        height: 13cm;
+      }
+      .br{
+        float: left;
+      }
+      .atag{
+       text-decoration: none;
+      }
+      .p{
+        color: gray;
+      }
+      .s{
+        color: red;
+      }
+      .p2{
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Start of modal-->
+    <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-4 d-grid">
+          <button type="button" class="btn btn-primary" data-bs-target="#LogInModal" data-bs-toggle="modal">Log in</button>
+        </div>
+        <div class="col-4"></div>
+      </div>
+  
+      <div class="modal" id="LogInModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header hii">
+              <div class="col d-flex justify-content-start">
+                <img src="brand_logo.jpg" alt="logo" class="navbar-brand">
+                <h4 class="mt-5 p-2">E-World</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="modal-body">
+                 <!--log in form-->
+    <div class="container">
+        <div class="row">
+          <div class="mx-auto">
+            <form action="index.html">
+              <div>
+                <br>
+                <h2 class="d-flex justify-content-center"><b>Login</b></h2>
+                <br>
+                <label for="uname" class="form-label">Username</label>
+                <input style="font-family: FontAwesome;" type="name" id="uname" class="form-control border-0 rounded-0 border-bottom" placeholder="&#xf007 Type your username" required>
+              </div>
+              <div class="my-3 mx-3">
+                <label for="psw" class="form-label">Password</label>
+                <input style="font-family: FontAwesome;" type="password" id="psw" class="form-control border-0 rounded-0 border-bottom" placeholder="&#xf023Type your password" aria-describedby="pswHelp" required>
+                <div id="pswHelp" class="form-text text-end"><a href="#">Forgot Password</a></div>
+              </div>
+              <div class="d-grid gap-3 my-3">
+                <button type="submit" class="btn btn-primary background_color border" style="--btn-btn-font-size: 0.75rem">LOGIN</button>
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <a href="index.html" class="fa fa-facebook mx-1"></a>
+                <a href="index.html" class="fa fa-twitter mx-1"></a>
+                <a href="index.html" class="fa fa-google mx-1"></a>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    <!--end of log in form-->
+            </div>
+            <div class="modal-footer">
+              <div class="d-flex justify-content-center"><a href="registration.html">Sign Up?</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of modal-->
+      <!--Sign Up of modal-->
+      <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-4 d-grid">
+          <button class="btn btn-primary" type="button" data-bs-target="#SignUpModal" data-bs-toggle="modal">Sign Up</button>
+        </div>
+        <div class="col-4"></div>
+      </div>
+      <!--modal-->
+      <div class="modal" id="SignUpModal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header hii">
+              <div class="col d-flex justify-content-start">
+                <img src="brand_logo.jpg" alt="logo" class="navbar-brand">
+                <h4 class="mt-5 p-2">E-World</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="modal-body">
+                <div class="row my-3">
+                    <div class="col border mx-auto">
+                        <form action="log_in.html"> <!--start of registration form-->
+                            <h2 class="text-center">Registration Form</h2>
+                            <!--input group-->
+                            <div class="input-group">
+                                <span class="input-group-text" style="font-family: FontAwesome;"id="email">&#xf0e0</span>
+                                <input type="email" class="form-control" placeholder="name@gmail.com" aria-describedby="email" required>
+                            </div>
+                            <div class="input-group my-2">
+                                <span class="input-group-text" style="font-family: FontAwesome;" id="psw">&#xf023</span>
+                                <input type="password" class="form-control" placeholder="password" aria-describedby="psw" required>
+                            </div>
+                                <div class="row"> <!--grid for two input group-->
+                                    <div class="col-lg-6 my-2">
+                                        <div class="input-group">
+                                            <span class="input-group-text" style="font-family: FontAwesome;" id="Fname">&#xf007</span>
+                                            <input type="name" class="form-control" placeholder="First Name" aria-describedby="Fname" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 my-2">
+                                        <div class="input-group">
+                                            <span class="input-group-text" style="font-family: FontAwesome;" id="Lname">&#xf007</span>
+                                            <input type="name" class="form-control" placeholder="Last Name" aria-describedby="Lname" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check col-lg-3 col-md-5">
+                                        <input type="radio" id="radio1" class="form-check-control" name="radioGender" value="Gender1">
+                                        <label for="radio1" class="form-check-label">Male</label>
+                                    </div>
+                                    <div class="form-check col-lg-3 col-md-5">
+                                        <input type="radio" id="radio2" class="form-check-control" name="radioGender" value="Gender2" checked>
+                                        <label for="radio2" class="form-check-label">Female</label>
+                                    </div>
+                                </div>
+        
+                                <div class="my-2">
+                                    <label for="tarea1" class="form-label">Extra Information</label>
+                                    <textarea name="textarea1" id="tarea1" class="form-control" cols="10" rows="3"></textarea>
+                                </div>
+        
+                                <!--check box-->
+        
+                                <div class="form-check">
+                                    <input type="checkbox" id="check1" name="checkPolicy1" value="check1" class="form-check-label">
+                                    <label for="check1" class="">I agree with terms and conditions</label>
+                                </div>
+        
+                                <div class="form-check">
+                                    <input type="checkbox" id="check2" name="checkPolicy2" value="check2" class="form-check-label">
+                                    <label for="check2" class="">I want to receive newsletter</label>
+                                </div>
+                                <div class="d-grid my-2">
+                                    <button type="submit" class="btn border btn-primary">Register</button>
+                                </div>
+                            </div>
+                        </form> <!--end of registration form-->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+      <!--End of modal-->
+      <!--end of Sign up of modal-->
+
+
+      <div class="row mt-5">
+        <div class="col-4"></div>
+        
+        <div class="col-4 d-grid"><button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#ModalShop">Shooping Here</button></div>
+
+        <div class="col-4"></div>
+
+      </div>
+      <!--modal shpping-->
+      <div class="modal" id="ModalShop" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            
+
+
+
+            <div class="modal-header">                
+              <img src="brand_logo.jpg" alt="logo" class="navbar-brand">
+              <h4 class="mt-2 p-2">Online Shopping</h4>
+              <button class="btn btn-dark"><a href="page.html" class="attribute1 m-3">Details Here</a></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+
+            <div class="modal-body bg-primary-subtle">
+              
+
+              <div class="container">
+
+
+                <div class="row">
+
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mt-2 mb-3 border border-black hii">
+                      <img src="computer images/gameconsolemodal.jpg" alt="console" class="card-img-top p-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Gameconsole</h5>
+                        <p class="card-text"><br> Prices - $94</p>
+                        <button type="button" class="btn btn-primary">Buy Here</button>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mt-2 mb-3 border border-black hii">
+                      <img src="computer images/headphonemodal.jpg" alt="headphone" class="card-img-top p-3">
+                      <div class="card-body">
+                        <h5 class="hp-title">Headphone</h5>
+                        <p class="card-text"><br> Prices - $67</p>
+                        <button type="button" class="btn btn-primary">Buy Here</button>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mt-2 mb-3 border border-black hii">
+                      <img src="computer images/mousemodal.jpg" alt="mouse" class="card-img-top p-3">
+                      <div class="card-body">
+                        <h5 class="hp-title">Mouse</h5>
+                        <p class="card-text"><br> Prices - $40</p>
+                        <button type="button" class="btn btn-primary">Buy Here</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mt-2 mb-3 border border-black hii">
+                      <img src="computer images/laptopmodal.jpg" alt="laptop" class="card-img-top p-3">
+                      <div class="card-body">
+                        <h5 class="hp-title">Laptop</h5>
+                        <p class="card-text"><br> Prices - $2,200</p>
+                        <button type="button" class="btn btn-primary">Buy Here</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div><!--row div-->
+              
+              
+              </div>
+
+
+            </div>
+
+            <div class="modal-footer">
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-3">
+                    <p class="p">ABOUT</p> 
+                    <p><span class="s"><b>Siteinspire</b></span> is a showcase of the finest web and interative design</p>
+                  </div>
+                  <div class="col-3">
+                    <p class="p">LATEST WEBSITES</p> 
+                    The New Statesman <br> Palette Supply <br> Tamara Danz Hofe
+                  </div>
+                  <div class="col-3">
+                    <p class="p">INFORMATION</p>
+                     Advertise <br> Privacy
+                    </div>
+                  <div class="col-3">
+                    <p class="p">CONNECT WITH US</p> 
+                    <a href="#" class="fa fa-facebook m-1" data-bs-toggle="tooltip" data-bs-title="Facebook" data-bs-custom-class="custom-facebook" data-bs-placement="bottom"></a>
+                    <a href="#" class="fa fa-twitter m-1" data-bs-toggle="tooltip" data-bs-title="Twitter" data-bs-custom-class="custom-twitter" data-bs-placement="bottom"></a>
+                    <a href="#" class="fa fa-pinterest m-1" data-bs-toggle="tooltip" data-bs-title="Pinterest" data-bs-custom-class="custom-pinterest" data-bs-placement="bottom"></a>
+                  </div>
+                </div>
+                <p>Copyright &copy; 2022 <a href="#" class="p2">Howells-Studio</a> All screenshots &copy; of their respective owners</p>
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+      const tooltips=document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      tooltips.forEach(t =>{ new bootstrap.Tooltip(t)})
+
+      const popovers=document.querySelectorAll('[data-bs-toggle="popover"]')
+      popovers.forEach(pp=>{new bootstrap.Popover(pp)})
+  </script>
+
+  </body>
+</html>
+      

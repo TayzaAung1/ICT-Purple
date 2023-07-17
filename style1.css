@@ -1,0 +1,6 @@
+@media(min-width:576px){
+    .img{
+        clip-path: inset(17% 6% 23% 0);
+    }    
+}
+

@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-Store</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="brand_logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+      .navbar-brand{
+            width: 125px; 
+            height: 125px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <header class="text-white">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-light navbar-expand-lg ">
+                    <a href="index.html">
+                        <img class="navbar-brand" src="brand_logo.jpg" alt="brand">E-World
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainMenu">
+                     <ul class="navbar-nav mx-auto nav-underline">
+                        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Products</a>
+                        <ul class="dropdown-menu">
+                          <li><a href="apple.html" class="dropdown-item">Apple</a></li>
+                          <li><a href="computer.html" class="dropdown-item">Computers</a></li>
+                          <li><a href="#" class="dropdown-item">Laptops</a></li>
+                          <li><a href="page.html" class="dropdown-item">Electronic Devices</a></li>
+                        </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="gift-card.html">Gift-Cards</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reward.html">Rewards</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ModalLogin" data-bs-toggle="modal">Log In</a></li>
+                        <li class="nav-item"><a class="nav-link" href="" data-bs-toggle="modal">Sign Up</a></li>
+                     </ul>
+                    </div> 
+                    <form action="/" class="d-flex">
+                      <input type="search" class="form-control me-3" placeholder="search">
+                      <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Modal Log In-->
+    <div class="modal" id="ModalLogin" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="col d-flex justify-content-start">
+              <img src="brand_logo.jpg" alt="logo" class="navbar-brand">
+              <h4 class="mt-5 p-2">E-World</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+
+
+          <div class="modal-body">
+             <!--log in form-->
+             <div class="container">
+               <div class="row">
+                <div class="col bg-white hello">
+                  <form action="index.html">
+                    <div class="my-3 mx-3">
+                      <br>
+                      <h2 class="d-flex justify-content-center"><b>Login</b></h2>
+                      <br>
+                      <label for="uname" class="form-label">Username</label>
+                      <input style="font-family: FontAwesome;" type="name" id="uname" class="form-control border-0 rounded-0 border-bottom" placeholder="&#xf007 Type your username" required>
+                    </div>
+                    <div class="my-3 mx-3">
+                      <label for="psw" class="form-label">Password</label>
+                      <input style="font-family: FontAwesome;" type="psw" id="psw" class="form-control border-0 rounded-0 border-bottom" placeholder="&#xf023Type your password" aria-describedby="pswHelp" required>
+                      <div id="pswHelp" class="form-text text-end"><a href="#">Forgot Password</a></div>
+                    </div>
+                    <div class="d-grid gap-3 my-3">
+                      <button type="submit" class="btn btn-primary background_color border" style="--btn-btn-font-size: 0.75rem">LOGIN</button>
+                    </div>
+                    <br>
+                    <div class="d-flex justify-content-center">Or Sign Up Using</div>
+                    <br>
+                    <div class="d-flex justify-content-center">
+                      <a href="index.html" class="fa fa-facebook mx-1"></a>
+                      <a href="index.html" class="fa fa-twitter mx-1"></a>
+                      <a href="index.html" class="fa fa-google mx-1"></a>
+                    </div>
+                    <br>
+                    <br>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!--end of log in form-->
+          </div>
+
+
+
+          <div class="modal-footer">                  
+              <div class="d-flex justify-content-center"><p>If you don't have an account <a href="#ModalSignup" data-bs-toggle="modal">Sign up</a></p></div>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!--modal Sign up-->
+
+    <div class="modal" id="ModalSignup" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+
+
+
+
+          <div class="modal-header">
+            <div class="col d-flex justify-content-start">
+              <img src="brand_logo.jpg" alt="logo" class="navbar-brand">
+              <h4 class="mt-4 p-2">E-World</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+          </div>
+
+
+
+          <div class="modal-body">
+
+            <div class="my-3">
+              <div class="mx-auto">
+                  <form action="log_in.html"> <!--start of registration form-->
+                      <h2 class="text-center">Registration Form</h2>
+                      <!--input group-->
+                      <div class="input-group">
+                          <span class="input-group-text" style="font-family: FontAwesome;"id="email">&#xf0e0</span>
+                          <input type="email" class="form-control" placeholder="name@gmail.com" aria-describedby="email" required>
+                      </div>
+                      <div class="input-group my-2">
+                          <span class="input-group-text" style="font-family: FontAwesome;" id="psw">&#xf023</span>
+                          <input type="password" class="form-control" placeholder="password" aria-describedby="psw" required>
+                      </div>
+                          <div class="row"> <!--grid for two input group-->
+                              <div class="col-lg-6 my-2">
+                                  <div class="input-group">
+                                      <span class="input-group-text" style="font-family: FontAwesome;" id="Fname">&#xf007</span>
+                                      <input type="name" class="form-control" placeholder="First Name" aria-describedby="Fname" required>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 my-2">
+                                  <div class="input-group">
+                                      <span class="input-group-text" style="font-family: FontAwesome;" id="Lname">&#xf007</span>
+                                      <input type="name" class="form-control" placeholder="Last Name" aria-describedby="Lname" required>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="form-check col-lg-3 col-md-5">
+                                  <input type="radio" id="radio1" class="form-check-control" name="radioGender" value="Gender1">
+                                  <label for="radio1" class="form-check-label">Male</label>
+                              </div>
+                              <div class="form-check col-lg-3 col-md-5">
+                                  <input type="radio" id="radio2" class="form-check-control" name="radioGender" value="Gender2" checked>
+                                  <label for="radio2" class="form-check-label">Female</label>
+                              </div>
+                          </div>
+  
+                          <div class="my-2">
+                              <label for="tarea1" class="form-label">Extra Information</label>
+                              <textarea name="textarea1" id="tarea1" class="form-control" cols="10" rows="3"></textarea>
+                          </div>
+  
+                          <!--check box-->
+  
+                          <div class="form-check">
+                              <input type="checkbox" id="check1" name="checkPolicy1" value="check1" class="form-check-label">
+                              <label for="check1" class="">I agree with terms and conditions</label>
+                          </div>
+  
+                          <div class="form-check">
+                              <input type="checkbox" id="check2" name="checkPolicy2" value="check2" class="form-check-label">
+                              <label for="check2" class="">I want to receive newsletter</label>
+                          </div>
+                          <div class="d-grid my-2">
+                              <button type="submit" class="btn border btn-primary">Register</button>
+                          </div>
+                      </div>
+                  </form> <!--end of registration form-->
+              </div>
+           </div>
+           <div class="modal-footer">
+            <div class="row">
+              <p>If you already have an account  <a href="#ModalLogin" data-bs-toggle="modal">Log In?</a></p>
+            </div>
+          </div>
+        </div>  
+
+
+
+
+        </div>
+      </div>
+    </div>
+    
+    <!--end of modal sign up-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

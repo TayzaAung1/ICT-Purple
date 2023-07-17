@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="brand_logo.jpg" type="image/x-icon">
+    <style>
+      .background_color{
+        border-radius: 25px;
+        background: lightblue;
+        padding: 10px;
+
+      }
+      .hello{
+        border-radius: 10px;
+        padding: 10px;
+      }
+      .hi{
+        background: lightblue;
+      }
+      .navbar-brand{
+            width: 125px; 
+            height: 125px;
+        }
+    </style>
+  </head>
+  <body class="hi">
+
+    <!--nav section-->
+    <header class="text-white bg-white">
+      <div class="container">
+          <div class="row">
+              <nav class="navbar navbar-light navbar-expand-lg ">
+                  <a href="index.html">
+                      <img class="navbar-brand" src="brand_logo.jpg" alt="brand">E-World
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="mainMenu">
+                   <ul class="navbar-nav mx-auto nav-underline">
+                      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Products</a>
+                      <ul class="dropdown-menu">
+                        <li><a href="apple.html" class="dropdown-item">Apple</a></li>
+                        <li><a href="computer.html" class="dropdown-item">Computers</a></li>
+                        <li><a href="#" class="dropdown-item">Laptops</a></li>
+                        <li><a href="page.html" class="dropdown-item">Electronic Devices</a></li>
+                      </ul>
+                      </li>
+
+                      <li class="nav-item"><a class="nav-link" href="gift-card.html">Gift-Cards</a></li>
+                      <li class="nav-item"><a class="nav-link" href="reward.html">Rewards</a></li>
+                      <li class="nav-item"><a class="nav-link" href="log_in.html">Log In</a></li>
+                      <li class="nav-item"><a class="nav-link" href="registration.html">Sign Up</a></li>
+                   </ul>
+                  </div> 
+                  <form action="/" class="d-flex">
+                    <input type="search" class="form-control me-3" placeholder="search">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                  </form>
+              </nav>
+          </div>
+      </div>
+  </header>
+    <!--end of nav section-->
+
+    <!--log in form-->
+    <div class="container my-5">
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-8 mx-auto bg-white hello">
+            <form action="index.html">
+              <div class="my-3 mx-3">
+                <br>
+                <h2 class="d-flex justify-content-center"><b>Login</b></h2>
+                <br>
+                <label for="uname" class="form-label">Username</label>
+                <input style="font-family: FontAwesome;" type="name" id="uname" class="form-control border-0 rounded-0 border-bottom" placeholder="&#xf007 Type your username" required>
+              </div>
+              <div class="my-3 mx-3">
+                <label for="psw" class="form-label">Password</label>
+                <input style="font-family: FontAwesome;" type="psw" id="psw" class="form-control border-0 rounded-0 border-bottom" placeholder="&#xf023Type your password" aria-describedby="pswHelp" required>
+                <div id="pswHelp" class="form-text text-end"><a href="#">Forgot Password</a></div>
+              </div>
+              <div class="d-grid gap-3 my-3">
+                <button type="submit" class="btn btn-primary background_color border" style="--btn-btn-font-size: 0.75rem">LOGIN</button>
+              </div>
+              <br>
+              <div class="d-flex justify-content-center">Or Sign Up Using</div>
+              <br>
+              <div class="d-flex justify-content-center">
+                <a href="index.html" class="fa fa-facebook mx-1"></a>
+                <a href="index.html" class="fa fa-twitter mx-1"></a>
+                <a href="index.html" class="fa fa-google mx-1"></a>
+              </div>
+              <br>
+              <br>
+              <div class="d-flex justify-content-center">Or Sign Up Using</div>
+              <div class="d-flex justify-content-center">Sign Up</div>
+              <br>
+            </form>
+          </div>
+        </div>
+    </div>
+    <!--end of log in form-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apple</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar-brand{
+            width: 125px; 
+            height: 125px;
+        }
+    </style>
+  </head>
+  <body>
+    <!--Navgation Panel-->
+        <!--Nav Panel-->
+        <header class="text-white">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-light navbar-expand-lg ">
+                        <a href="index.html">
+                            <img class="navbar-brand" src="brand_logo.jpg" alt="brand">E-World
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+      
+                        <div class="collapse navbar-collapse" id="mainMenu">
+                         <ul class="navbar-nav mx-auto nav-underline">
+                            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+      
+                            <li class="nav-item dropdown">
+                              <a class="nav-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Products</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="apple.html" class="dropdown-item">Apple</a></li>
+                              <li><a href="computer.html" class="dropdown-item">Computers</a></li>
+                              <li><a href="#" class="dropdown-item">Laptops</a></li>
+                              <li><a href="page.html" class="dropdown-item">Electronic Devices</a></li>
+                            </ul>
+                            </li>
+      
+                            <li class="nav-item"><a class="nav-link" href="gift-card.html">Gift-Cards</a></li>
+                            <li class="nav-item"><a class="nav-link" href="reward.html">Rewards</a></li>
+                            <li class="nav-item"><a class="nav-link" href="log_in.html">Log In</a></li>
+                            <li class="nav-item"><a class="nav-link" href="registration.html">Sign Up</a></li>
+                         </ul>
+                        </div> 
+                        <form action="/" class="d-flex">
+                          <input type="search" class="form-control me-3" placeholder="search">
+                          <button type="submit" class="btn btn-primary">Search</button>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </header>
+          <!--End of Nav panel-->
+    <!--Carousel for Apple Page-->
+    <div id="com-carousel" class="carousel slide carousel-fade" data-bs-ride="com-carousel">
+        <!-- Carousel indicators-->
+        <div id="com-carousel" class="carousel-slide"></div>
+        <!--Carousel indicators-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#com-carousel" data-bs-slide-to="0" aria-label="slide1" class="active" aria-current="true"></button>
+            <button type="button" data-bs-target="#com-carousel" data-bs-slide-to="1" aria-label="slide1" aria-current="true"></button>
+            <button type="button" data-bs-target="#com-carousel" data-bs-slide-to="2" aria-label="slide1" aria-current="true"></button>
+        </div> <!--end of carousel indicators-->
+        <div class="carousel-inner text-center">
+            <div class="carousel-item cr-bg1 cr-bg active">
+                <div class="carousel-hero mt-5 mb-5">
+                    <img src="images-removebg-preview.png" class="d-block image1" alt="image1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide Label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item cr-bg2 cr-bg">
+                <div class="carousel-hero mt-5 mb-5">
+                    <img src="images-removebg-preview.png" class="d-block image2" alt="image2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second Slide Label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item cr-bg3 cr-bg">
+                <div class="carousel-hero mt-5 mb-5">
+                    <img src="images-removebg-preview.png" class="d-block image3" alt="image3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide Label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Prev and Next Buttons-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#com-carousel" data-bs-slide="prev">
+            <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#com-carousel" data-bs-slide="next">
+            <span class="visually-hidden">Next</span>
+            <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+        </button>
+    </div>
+    <!--Tooltips-->
+    <p>This is testing for tooltip in the computer section. You can go to the <a href="log_in.html" data-bs-toggle="tooltip" data-bs-title="This one is the link to Loh In Page.">log in</a> page from here.</p>
+
+    <p>This is testing for tooltip in the computer section. You can go to the <a href="log_in.html" class="tt" title="Link to Log In Page">log in</a> page from here.</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+        const tooltips=document.querySelectorAll('.tt')
+        tooltips.forEach(t => { new bootstrap.Tooltip(t)
+        })
+    </script>
+  </body>
+</html>
